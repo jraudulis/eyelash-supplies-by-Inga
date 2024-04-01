@@ -1,0 +1,22 @@
+{
+  "name": "eyelash-supplies-by-inga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jraudulis/eyelash-supplies-by-Inga.git"
+  },
+  "author": "Juris Raudulis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jraudulis/eyelash-supplies-by-Inga/issues"
+  },
+  "homepage": "https://github.com/jraudulis/eyelash-supplies-by-Inga#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
