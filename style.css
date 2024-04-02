@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+ margin: auto 0;
+}
+
 #hero{
  display: grid;
  justify-items: center;
@@ -10,21 +14,21 @@
 }
 
 #nav-bar{
- margin: 1rem;
- height: 50px;
+ height: auto;
  display: flex;
  justify-content: flex-end;
  align-items: center;
  list-style: none;
 }
 
+li{
+ padding: 1em 2.5em 0 2.5em;
+}
+
 .nav-logo{
  align-items: center;
 }
 
-li{
- padding: 2.5rem;
-}
 
 #shop-cart{
  margin-left: 13%;
@@ -39,13 +43,15 @@ a {
 }
 
 .hero-container{
- width: 42%;
+ max-width: 100%;
+ display: grid;
+ justify-items: center;
  height: auto;
  margin-top: 5rem;
 }
 
 .hero-container img{
- width: 100%;
+ width: 42%;
  height: auto;
  background-size: cover;
  background-repeat: no-repeat;
@@ -79,4 +85,38 @@ h1{
  background-color: #B48541;
  color: white;
 }
+
+
+
+
+@media only screen and (max-width: 1200px){
+
+ #nav-bar{
+ height: auto;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ list-style: none;
+}
+
+#shop-cart{
+ margin: 0;
+}
+
+li{
+ padding: 1em 1em 0 1em;
+}
+
+a{
+ font-size: .8rem;
+}
+
+}
+
+
+
+
+
+
+
 
