@@ -45,7 +45,7 @@ body{
 
 #hamburger-menu div{
  width: 30px;
- height: 5px;
+ height: 2px;
  margin: 5px 0;
  background-color: black;
  transition: 0.4s;
