@@ -196,10 +196,13 @@ h2{
  line-height: 2em;
 }
 
-#about img{
+.about-container{
+ padding: 0 1rem;
+}
+
+.about-container img{
  width: 100%;
  justify-items: center;
- padding: 0 1em;
 }
 
 #contacts{
