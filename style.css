@@ -278,7 +278,7 @@ h2{
 }
 
 .shop-products{
- width: 15%;
+ width: 20%;
 }
 
 .shop-products img{
@@ -340,6 +340,16 @@ h2{
   font-size: 0.8rem; 
   padding: 12px 20px;
 
+}
+
+.shop-products-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.shop-products{
+  width: 80%;
 }
 
 @media only screen and (max-width: 500px){
