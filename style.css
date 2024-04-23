@@ -267,11 +267,27 @@ h3{
 
 /* Shop eyelashes page style */
 
-.shop-container{
+.shop-big-container{
   display: flex;
   flex-direction: column;
   gap: 5rem;
   margin-top: 5rem;
+  text-align: center;
+}
+
+.shop-products-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shop-products-image-container{
+  width: 400px;
+  padding: 1em;
+}
+
+.shop-products-image-container img{
+  width: 100%;
 }
 
 .eyelash-glue-page{
@@ -282,8 +298,8 @@ h3{
  gap: 5rem;
 }
 
-.shop-eyelashes{
- width: 20%;
+.product-options-image-container{
+ width: 300px;
  margin-left: 15rem;
 }
 
@@ -300,7 +316,7 @@ h3{
   margin-left: 15rem;
 }
 
-.shop-eyelashes img{
+.product-options-image-container img{
  width: 100%;
 }
 
@@ -356,6 +372,35 @@ h3{
   padding: 2rem;
   text-align: center;
  }
+
+ .eyelash-glue-page{
+ display: flex;
+ flex-direction: column;
+ margin-top: 5rem;
+ flex-wrap: wrap;
+ align-items: center;
+ align-content: center;
+ gap: 5rem;
+}
+
+.product-options-image-container{
+   margin: 0;
+}
+.products-options{
+  align-self: unset;
+  align-items: center;
+}
+
+#add-to-cart-btn{
+  margin: 2rem 0;
+}
+
+.product-information{
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 2em;
+}
 
 }
 
