@@ -15,8 +15,6 @@ body.mobile-nav-active{
 
 .nav-container{
  display: flex;
- justify-content: flex-end;
- align-items: center;
 }
 
 #nav-bar{
@@ -64,6 +62,7 @@ body.mobile-nav-active{
 #hamburger-menu{
  display: none;
  cursor: pointer;
+ z-index: 1;
 }
 
 #hamburger-menu div{
@@ -101,10 +100,84 @@ li{
 }
 
 
-#shop-cart{
- 
+#shop-cart-icon{
+  align-self: center;
+ z-index: 2;
  margin: 0 2rem;
  cursor: pointer;
+}
+
+#shop-cart{
+  height: 85vh;
+  width: 50%;
+  right: -100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  transition: 1s;
+}
+
+#shop-cart.show{
+  right: 0;
+}
+
+#shop-cart h2{
+  align-self: center;
+  justify-self: center;
+  grid-row: 1/2;
+  z-index: 1;
+}
+
+#closing-symbol{
+  justify-self: start;
+  align-self: start;
+  position: fixed;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.close-bar1{
+  transform: translatey(8px) rotate(45deg);
+}
+
+.close-bar2{
+  transform: translatey(1px) rotate(-45deg);
+}
+
+#closing-symbol div{
+ width: 20px;
+ height: 2px;
+ margin: 5px 0;
+ background-color: black;
+ transition: .3s;
+}
+
+#checkout-btn{
+  padding: 0.5rem;
+  width: 50%;
+  margin: 1rem 0 1rem 0;
+  background-color: #B48541;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+
+#continue-shop-btn{
+  background-color: white;
+  border: solid black 1px;
+  padding: 0.5rem;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+#button-wrapper{
+  grid-row: 4/5;
+  grid-column: span 3;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 a, .mobile-nav a {
@@ -265,7 +338,7 @@ h3{
 }
 
 
-/* Shop eyelashes page style */
+/* Shop eyelashes and glue page style */
 
 .shop-big-container{
   display: flex;
@@ -420,6 +493,8 @@ h3{
  }
 
 #shop-cart{
+  height: 90vh;
+  width: 80%;
   margin: 1rem;
  }
 
